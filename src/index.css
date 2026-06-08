@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;650&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base Body Override for Cybernetic Theme */
+body {
+  background-color: #040407;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.03) 0%, transparent 60%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Infinite Tech Lattice Mesh Pattern Backdrop */
+.cyber-lattice {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+}
+
+/* Premium micro-interactions & visual states */
+.glow-indigo-pulse {
+  box-shadow: 0 0 15px -3px rgba(99, 102, 241, 0.2);
+}
+
+.text-glow-emerald {
+  text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+
+.text-glow-indigo {
+  text-shadow: 0 0 8px rgba(129, 140, 248, 0.4);
+}
+
+/* Standard scrollbar configuration */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(63, 63, 70, 0.7);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+/* Compact text area line heights styling */
+.custom-textarea {
+  line-height: 1.6;
+}
+
+/* Neon animated border shimmer */
+@keyframes border-shimmer {
+  0% { border-color: rgba(99, 102, 241, 0.2); }
+  50% { border-color: rgba(99, 102, 241, 0.65); }
+  100% { border-color: rgba(99, 102, 241, 0.2); }
+}
+
+.shimmer-indigo-border {
+  animation: border-shimmer 4s infinite ease-in-out;
+}
+
+

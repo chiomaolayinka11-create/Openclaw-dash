@@ -1,0 +1,6 @@
+{
+  "name": "OpenClaw AI Dashboard",
+  "description": "A production-ready full-stack management dashboard for OpenClaw AI agents, featuring real-time terminal diagnostics, interactive prompt configuration, approval controls, and active agent armies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
